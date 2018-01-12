@@ -1,0 +1,34 @@
+import React from 'react';
+import { Text, TouchableOpacity } from 'react-native';
+
+const Button = () => {
+    const { buttonStyle, textStyle } = styles;
+    return (
+        <TouchableOpacity style={buttonStyle}>
+            <Text style={textStyle}>Buy</Text>
+        </TouchableOpacity>
+    );
+};
+
+const styles = {
+    buttonStyle: {
+        alignSelf: 'stretch',
+        backgroundColor: '#fff',
+        borderColor: '#007aff',
+        borderRadius: 5,
+        borderWidth: 1,
+        flex: 1, // expand to fill up as much content as possible
+        marginLeft: 5,
+        marginRight: 5,
+    },
+    textStyle: {
+        alignSelf: 'center',
+        color: '#007aff',
+        fontSize: 16,
+        fontWeight: '600',
+        paddingTop: 10,
+        paddingBottom: 10,
+    },
+};
+
+export default Button;
